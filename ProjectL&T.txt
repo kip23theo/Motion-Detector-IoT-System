@@ -1,0 +1,71 @@
+#  Motion Detector, CCTV, and Siren IoT Smart Devices Simulation
+
+This project demonstrates an IoT-based security system using **Cisco Packet Tracer**.  
+It automatically detects motion, turns ON a siren and CCTV camera, and turns them OFF when no motion is detected.
+
+---
+
+##  Aim
+To design and simulate an IoT-based security system that uses a motion detector to trigger a siren and activate CCTV in real-time, providing automated surveillance and alerts.
+
+---
+
+##  Problem Statement
+Traditional surveillance systems rely on manual monitoring, which is slow and error-prone.  
+This project builds an automated **Intruder Detection System** that immediately responds to motion detection events by sounding an alarm, activating CCTV, and notifying users.
+
+---
+
+##  Scope of the Solution
+- **Automation:** Detects motion and activates security devices automatically.
+- **Notification:** Real-time alert through simulation (CCTV feed + siren).
+- **Scalable:** Additional sensors or cameras can be added.
+- **Cost-Effective:** Fully simulated in Cisco Packet Tracer, no real hardware required.
+
+---
+
+##  Required Components
+
+### Software
+- Cisco Packet Tracer (v8.x or higher)
+
+### Hardware (Virtual)
+- Home Gateway (IoT Controller)
+- Motion Detector (PIR Sensor)
+- Siren (Alarm)
+- CCTV Camera (IoT Webcam)
+- Tablet / PC (Optional for monitoring)
+
+---
+
+##  Simulated Circuit
+### Topology
+![Network Topology](screenshots/topology.png)
+
+### IoT Rules
+![IoT Rules](screenshots/iot_rules.png)
+
+**Rules Configured:**
+1. **IF** Motion Detector = ON → Turn ON Siren + Turn ON CCTV  
+2. **IF** Motion Detector = OFF → Turn OFF Siren + Turn OFF CCTV  
+
+---
+
+##  Demo
+1. Open `motion_detector_simulation.pkt` in Cisco Packet Tracer  
+2. Connect devices to the gateway  
+3. Trigger **Motion Detector** (Simulation Mode → Click "Detect Motion")  
+4. Observe:
+   - Siren turns ON
+   - CCTV starts streaming
+
+---
+
+##  Demo Video
+ attached
+
+---
+
+## ✅ Output
+- **Motion Detected:** Siren ON + CCTV ON
+- **No Motion:** Siren OFF + CCTV OFF
